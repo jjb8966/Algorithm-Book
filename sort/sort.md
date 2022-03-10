@@ -82,18 +82,18 @@
     3. 오른쪽에서부터 pivot보다 작은 수를 찾아서 선택 (b)
 
        4-1.  a가 b보다 왼쪽에 있는 경우
-
-       ![IMG_FF426202C5FC-1.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/119a1981-f675-4c1b-b867-212f6cdd8c28/IMG_FF426202C5FC-1.jpeg)
+        
+       ![IMG_FF426202C5FC-1.jpeg](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/119a1981-f675-4c1b-b867-212f6cdd8c28/IMG_FF426202C5FC-1.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220310%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220310T103326Z&X-Amz-Expires=86400&X-Amz-Signature=031fd3ed876e59208f8aa372057806c4a9b15fbdcec8bbe4481619c1d7ca93e9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22IMG_FF426202C5FC-1.jpeg%22&x-id=GetObject)
 
         - a와 b 교환
 
        4-2.  a가 b보다 오른쪽에 있는 경우
 
-       ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4fa5d0e8-bd3c-4b92-ba81-b53eab1d56c9/Untitled.png)
+       ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4fa5d0e8-bd3c-4b92-ba81-b53eab1d56c9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220310%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220310T103556Z&X-Amz-Expires=86400&X-Amz-Signature=db26657d37ab8705b3202ca875d5dda0218272f72a3ed781aafa66193f151928&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
         - pivot과 b 교환
 
-          ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb58d711-7709-4949-82a5-0cd1361201bf/Untitled.png)
+          ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb58d711-7709-4949-82a5-0cd1361201bf/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220310%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220310T103621Z&X-Amz-Expires=86400&X-Amz-Signature=793411167074f5f7192b0d51893a5571b2ad1bc0f43f201c288e781eff65332b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 - 시간 복잡도 : O(NlogN) → 선택 정렬, 삽입 정렬보다 빠름
     - 삽입 정렬과 반대로 이미 어느 정도 정렬된 상태면 속도가 느림
