@@ -33,7 +33,6 @@
         }
     ```
 
-
 # 2. 삽입 정렬
 
 - 동작 과정
@@ -46,7 +45,7 @@
 - 코드
 
     ```java
-    		private static void process() {
+        private static void process() {
             // 가장 첫번째 인덱스는 정렬되어있다고 생각하고 두번째 인덱스부터 정렬 시작
             for (int i = 1; i < values.length; i++) {
                 for (int j = i; j > 0; j--) {
@@ -66,7 +65,6 @@
         }
     ```
 
-
 # 3. 퀵 정렬
 
 - 가장 많이 사용되는 정렬 알고리즘
@@ -75,13 +73,13 @@
     2. 왼쪽에서부터 pivot보다 큰 수를 찾아서 선택 (a)
     3. 오른쪽에서부터 pivot보다 작은 수를 찾아서 선택 (b)
 
-       4-1.  a가 b보다 왼쪽에 있는 경우
-        
+       4-1. a가 b보다 왼쪽에 있는 경우
+
        ![IMG_FF426202C5FC-1.jpeg](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/119a1981-f675-4c1b-b867-212f6cdd8c28/IMG_FF426202C5FC-1.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220310%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220310T103326Z&X-Amz-Expires=86400&X-Amz-Signature=031fd3ed876e59208f8aa372057806c4a9b15fbdcec8bbe4481619c1d7ca93e9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22IMG_FF426202C5FC-1.jpeg%22&x-id=GetObject)
 
         - a와 b 교환
 
-       4-2.  a가 b보다 오른쪽에 있는 경우
+       4-2. a가 b보다 오른쪽에 있는 경우
 
        ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4fa5d0e8-bd3c-4b92-ba81-b53eab1d56c9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220310%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220310T103556Z&X-Amz-Expires=86400&X-Amz-Signature=db26657d37ab8705b3202ca875d5dda0218272f72a3ed781aafa66193f151928&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
@@ -94,7 +92,7 @@
 - 코드
 
     ```java
-    		private static void quickSort(int start, int end) {
+        private static void quickSort(int start, int end) {
             int pivot = start;
             int left = start + 1;
             int right = end;
@@ -141,7 +139,6 @@
         }
     ```
 
-
 # 4. 계수 정렬
 
 - 특정 조건을 만족해야만 사용할 수 있지만 사용할 수 있다면 매우 빠르게 동작함
@@ -159,3 +156,19 @@
     - N : 데이터의 개수
     - K : 데이터 중 최대값
 - 코드
+    ```java
+    private static void process() {
+        int maxValue = Arrays.stream(values).max().getAsInt();
+        int[] countCoefficient = new int[maxValue + 1];
+
+        for (int number : values) {
+            countCoefficient[number]++;
+        }
+
+        for (int i = 0; i <= maxValue; i++) {
+            for (int j = 0; j < countCoefficient[i]; j++) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+  ```
