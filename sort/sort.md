@@ -1,6 +1,6 @@
 # 정렬(Sort)
 
-# 1. 선택 정렬
+## 1. 선택 정렬
 
 - 동작 과정
     1. 가장 작은 데이터를 맨 앞에 있는 데이터와 바꿈
@@ -10,7 +10,7 @@
 - 코드
 
     ```java
-    		private static void process() {
+    	private static void process() {
             for (int changeIndex = 0; changeIndex < values.length; changeIndex++) {
                 int minimumNumberIndex = changeIndex;
     
@@ -33,7 +33,7 @@
         }
     ```
 
-# 2. 삽입 정렬
+## 2. 삽입 정렬
 
 - 동작 과정
     1. 리스트 내에서 (왼쪽에) 정렬된 데이터가 있음
@@ -45,7 +45,7 @@
 - 코드
 
     ```java
-        private static void process() {
+       private static void process() {
             // 가장 첫번째 인덱스는 정렬되어있다고 생각하고 두번째 인덱스부터 정렬 시작
             for (int i = 1; i < values.length; i++) {
                 for (int j = i; j > 0; j--) {
@@ -65,7 +65,7 @@
         }
     ```
 
-# 3. 퀵 정렬
+## 3. 퀵 정렬
 
 - 가장 많이 사용되는 정렬 알고리즘
 - 동작 과정
@@ -139,7 +139,7 @@
         }
     ```
 
-# 4. 계수 정렬
+## 4. 계수 정렬
 
 - 특정 조건을 만족해야만 사용할 수 있지만 사용할 수 있다면 매우 빠르게 동작함
     - 조건
